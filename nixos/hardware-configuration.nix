@@ -37,7 +37,7 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/mnt/games" = 
+  fileSystems."/data" = 
     { device = "/dev/disk/by-uuid/5969c7de-44f9-4371-a61d-0387bfefb441";
       fsType = "ext4";
       options = [ "noatime" "nofail" ];
