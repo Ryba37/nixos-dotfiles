@@ -22,11 +22,12 @@ end)
 
 hl.config({
   input      = {
-    kb_layout    = "pl,ru",
-    kb_options   = "grp:ctrl_space_toggle",
-    follow_mouse = 1,
-    sensitivity  = 0,
-    touchpad     = { natural_scroll = false },
+    kb_layout     = "pl,ru",
+    kb_options    = "grp:ctrl_space_toggle",
+    follow_mouse  = 1,
+    accel_profile = "flat",
+    sensitivity   = 0,
+    touchpad      = { natural_scroll = false },
   },
 
   general    = {

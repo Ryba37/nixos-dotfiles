@@ -5,6 +5,9 @@
 
   programs.steam.enable = true;
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "matvii" ];
+
   environment.systemPackages = with pkgs; [
     awww
     mako
@@ -21,9 +24,11 @@
 
     home-manager
     vesktop
-    proton-vpn-cli
 
     librepods
+
+    openjdk25
+    python3
   ];
 
   fonts.packages = with pkgs; [

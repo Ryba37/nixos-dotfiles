@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ eza fnm ];
+  home.packages = with pkgs; [
+  eza
+];
 
   programs.fish = {
     enable = true;
@@ -10,7 +12,6 @@
       ls = "eza --group-directories-first";
     };
     interactiveShellInit = ''
-      fnm env --use-on-cd --shell fish | source
     '';
     functions = {
       fish_greeting = "";
